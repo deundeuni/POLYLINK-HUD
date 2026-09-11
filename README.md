@@ -1,11 +1,11 @@
-> **Multilingual Publication Notice:** This document is published in dual Korean/English versions. v1.3.1 2026-09-12 (Korean version: [README.ko.md](README.ko.md))  
+> **Multilingual Publication Notice:** This document is published in dual Korean/English versions. v1.3.2 2026-09-12 (Korean version: [README.ko.md](README.ko.md))  
 > **Original Authority Notice:** The authoritative legal and technical reference for this specification belongs to the Korean original (`README.ko.md`). The English version serves solely as an auxiliary reference. (`README.ko.md` is authoritative original)
 
 # POLYLINK-HUD (formerly CWP-AR-HUD) — Technical Specification for Multilingual Legacy Industrial Equipment Non-invasive Optical Vision OCR/LLM Overlay and Multisensory AR Glass HUD Spatial HMI Gateway
-## Subtitle: Human-Centric Auxiliary AI Safety First Principle, Zero-Modification Principle for Firmware/PLC Controllers, Base Lightweight Implementation & Extended Fusion Hardware Combinations, Error Lifecycle Blackbox Logging & RAG Solution Search Linkage, Enterprise Storage Routing (NAS/S3/MES) Automated Documentation, Privacy by Design 4 Human Rights Protection Mechanisms & BYOD Private Space Blurring, Legacy Media Zero-Modification Overlay & Game UI/Dialogue and Venue Standard Subtitle Application Extensibility, Target Language (Native Language) Spatial Overlay for Multilingual/Multinational Sites, 1ms-class MIPI Switching & Cognitive Buffer Resource Control, FIRST-LIGHT/LAST-LIGHT Wide-Area Mesh L0 Anchor Lineage, 3 Sub-categories (Enterprise/Everyday/Personal BYOD), Pure Conceptual White Paper Author Zero-Liability Declaration, and soma-moa L3 Social Auxiliary Governance Defensive Publication (Ver. 1.3.1)
+## Subtitle: Human-Centric Auxiliary AI Safety First Principle, Zero-Modification Principle for Firmware/PLC Controllers, Base Lightweight Implementation & Extended Fusion Hardware Combinations, Error Lifecycle Blackbox Logging & RAG Solution Search Linkage, Enterprise Storage Routing (NAS/S3/MES) Automated Documentation, Privacy by Design 4 Human Rights Protection Mechanisms & BYOD Private Space Blurring, Legacy Media Zero-Modification Overlay & Game UI/Dialogue and Venue Standard Subtitle Application Extensibility, Target Language (Native Language) Spatial Overlay for Multilingual/Multinational Sites, 1ms-class MIPI Switching & Cognitive Buffer Resource Control, FIRST-LIGHT/LAST-LIGHT Wide-Area Mesh L0 Anchor Lineage, 3 Sub-categories (Enterprise/Everyday/Personal BYOD), Pure Conceptual White Paper Author Zero-Liability Declaration, and soma-moa L3 Social Auxiliary Governance Defensive Publication (Ver. 1.3.2)
 
 * **Official Classification:** Defensive Publication / Prior Art White Paper
-* **Initial Conception Date:** 2026-08-28 / **Final Revision Date (v1.3.1):** 2026-09-12
+* **Initial Conception Date:** 2026-08-28 / **Final Revision Date (v1.3.2):** 2026-09-12
 * **Original Intellectual Property Owner:** soma-moa (Conceiver: deundeuni)
 * **Official Repositories:** github.com/soma-moa | github.com/deundeuni | **Official Domain:** somamoa.ai.kr
 * **Applicable Licenses:** Creative Commons Attribution 4.0 (CC BY 4.0) & DPL v1.0 (Defensive Patent License)
@@ -22,7 +22,7 @@ The primary premise of this specification is **"Human-Centric Auxiliary Safety F
 
 Addressing these challenges, this framework introduces **'POLYLINK-HUD (Polyglot Link HUD) Non-invasive Spatial HMI Gateway'**. Without modifying internal code or circuitry by even 1 Bit (Zero-Modification), it captures external display pixel streams and audio feeds via cameras and microphones, projecting real-time target language (customized to the worker's native language) subtitles and manual guidelines onto AR glass HUD lenses as spatial overlays.
 
-The core identity `moa` transcends simple data gathering/collecting, embodying human warmth aimed at "embracing and gathering fragmented error logs and distributed terminals into one system." The vowel symmetry in `S O M A` - `m o a` and the lowercase hyphenated form `soma-moa` represent the open-source community identity.
+The brand name `moa` embodies the human warmth of embracing and gathering fragmented error logs into one system.
 
 This serves as a practical implementation of `soma-moa` Charter 0 (Axiom 0) and the Human-in-the-Loop philosophy: "Robots and AI are Subordinate, System Governance is Main, but even Governance must remain Auxiliary to primary human tasks." It maintains original equipment safety while aiming to improve first-line response capabilities of field technicians.
 
@@ -74,7 +74,8 @@ This architecture was independently conceived by the author; however, the possib
 * **v1.1 (2026-09-11) —** Renamed to `POLYLINK-HUD`, established `FIRST/LAST-LIGHT` lineage, clarified Extended Fusion, and defined dual licensing structure.
 * **v1.2 (2026-09-11) —** Removed brand names, established game/venue subtitle extensibility, and defined BYOD private space blurring protections.
 * **v1.3 (2026-09-11) —** Established Human-Centric Auxiliary AI Safety First, Error Lifecycle Blackbox Logging, RAG linkage, enterprise routing, and trade secret separation.
-* **v1.3.1 (2026-09-12) —** **[Legacy Media & Zero-Modification Preservation Revision]** Defined non-invasive spatial overlays for legacy media (Archival Film, VHS, LD, DVD) and game UI/dialogue without modifying or damaging original physical media.
+* **v1.3.1 (2026-09-12) —** Defined non-invasive spatial overlays for legacy media (Archival Film, VHS, LD, DVD) and game UI/dialogue without modifying or damaging original physical media.
+* **v1.3.2 (2026-09-12) —** **[Brand Naming Streamlining & Appendix Isolation Revision]** Streamlined the moa brand origin explanation in Section 0.1 for readability and isolated phonetic trademark intent details into Appendix E.
 
 ---
 
@@ -238,6 +239,11 @@ Applies to legacy CNC AR maintenance, foreign meter retrofits, everyday consumer
 ---
 
 ## Appendix D: Legal Disclaimer & Responsibility Limitation
-* **White Paper Nature & Auxiliary Notice —** Disclosed technologies (POLYLINK-HUD v1.3.1) constitute a pure conceptual white paper published to prevent private patent monopolization. It provides no operational guarantees for commercial production and functions strictly as an auxiliary reference.
+* **White Paper Nature & Auxiliary Notice —** Disclosed technologies (POLYLINK-HUD v1.3.2) constitute a pure conceptual white paper published to prevent private patent monopolization. It provides no operational guarantees for commercial production and functions strictly as an auxiliary reference.
 * **Author Zero-Liability Declaration —** The author (`deundeuni` / `soma-moa`) assumes zero civil or criminal liability for equipment failures, maintenance errors, line stoppages, property damage, or legal disputes resulting from implementing or referencing this document. All operational responsibilities belong to the implementing entity.
 * **Trademark Disclaimer —** Technical terms and standards referenced herein serve as field examples and imply no infringement of third-party trademarks.
+
+---
+
+## Appendix E: Brand Naming & Phonetic Structure
+* **Brand Origin & Phonetic Structure of soma-moa —** The brand name `moa` embodies the human warmth of "embracing and gathering fragmented error logs into one system," transcending simple data collection. The vowel symmetry in `S O M A` - `m o a` and the lowercase hyphenated form `soma-moa` symbolize open-source community identity and a unique branding signature, maintained as evidence of trademark rights and origin intent.
