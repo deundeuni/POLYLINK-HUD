@@ -1,264 +1,165 @@
-> **Multilingual Publication Notice:** This document is published in dual Korean/English versions. v1.3.8 2026-09-12 (Korean version: [README.ko.md](README.ko.md))  
-> **Original Authority Notice:** The authoritative legal and technical reference for this specification belongs to the Korean original (`README.ko.md`). The English version serves solely as an auxiliary reference. (`README.ko.md` is authoritative original)
-
-# POLYLINK-HUD (formerly CWP-AR-HUD) — Technical Specification for Multilingual Legacy Industrial Equipment Non-invasive Optical Vision OCR/LLM Overlay and Multisensory AR Glass HUD Spatial HMI Gateway
-
-**Subtitle:** Human-Centric Auxiliary AI Safety First Principle, Zero-Modification Principle for Firmware/PLC Controllers, Base Lightweight Implementation & Extended Fusion Hardware Combinations, Error Lifecycle Blackbox Logging & RAG Solution Search Linkage, Enterprise Storage Routing (NAS/S3/MES) Automated Documentation, Privacy by Design 4 Human Rights Protection Mechanisms & BYOD Private Space Blurring, Legacy Media Zero-Modification Overlay & Game UI/Dialogue and Venue Standard Subtitle Application Extensibility, Target Language (Native Language) Spatial Overlay for Multilingual/Multinational Sites, 1ms-class MIPI Switching & Cognitive Buffer Resource Control, FIRST-LIGHT/LAST-LIGHT Wide-Area Mesh L0 Anchor & Non-invasive/Non-interference Design Philosophy Lineage Integration, 3 Sub-categories (Enterprise/Everyday/Personal BYOD), Pure Conceptual White Paper Author Zero-Liability Declaration, and soma-moa L3 Social Auxiliary Governance Defensive Publication (Ver. 1.3.8)
-
-* **Official Classification:** Defensive Publication / Prior Art White Paper
-* **Initial Conception Date:** 2026-08-28 / **Final Revision Date (v1.3.8):** 2026-09-12
-* **Original Intellectual Property Owner:** soma-moa (Conceiver: deundeuni)
-* **Official Repositories:** github.com/soma-moa | github.com/deundeuni | **Official Domain:** somamoa.ai.kr
-* **Applicable Licenses:** Creative Commons Attribution 4.0 (CC BY 4.0) & DPL v1.0 (Defensive Patent License)
-* **Keywords:** POLYLINK-HUD, CWP-AR-HUD, Polyglot Link HUD, AR Glass HUD, Human-Centric Auxiliary AI Safety, Non-invasive HMI, Vision OCR, On-Device VLM, Error Lifecycle Blackbox Logging, RAG Solution Search, Enterprise Routing, NAS S3 MES Auto-Documentation, Legacy Equipment Language Barrier, Multilingual Control Panel, Target Language Agnostic, Native Language Translation, Extended Fusion, Privacy by Design, 4 Human Rights Protection Mechanisms, Human-in-the-Loop, PIPA, EU AI Act Compliance, World-Locked Anchoring, Cybersickness Mitigation, Cognitive Read Window, Non-contact Wire Break Detection, 1ms-class Visual Response, MIPI High-Z, Overload Resource Control, Downtime Loss Mitigation, Hands-Free Maintenance, BYOD Personal AR Glasses, Legacy Media Zero-Modification Overlay, Game UI Subtitles, Venue Standard Subtitle Application, FIRST-LIGHT, LAST-LIGHT, Non-invasive Non-interference Design Philosophy Integration, Seamless Transition, First Light Last Light Link, Auxiliary Governance, Axiom 0, Author Zero Liability, soma-moa L3 Social, Tri-State Isolation, Multidisciplinary Expertise & Polyglot Coexistence Bridge Principle, deundeuni, Prior Art
-
----
-
-## 0. Author Declaration & Motivation
-
-### 0.1 Field-Driven Motivation, Human-Centric Auxiliary AI Safety & Auxiliary Governance
-This architecture originated from a practical pain point observed in industrial environments: "At sites operating imported and legacy precision processing and control equipment for over 10 to 20 years, inability to comprehend control panel displays and manuals written in foreign languages causes simple one-line errors to halt operations for days, leading to massive Downtime Loss."
-
-The primary premise of this specification is **"Human-Centric Auxiliary Safety First and Compliant Safe Operation of AI Systems Assisting Human Operators."** High-value and precision numerical control (NC/PLC) equipment tightly integrates precision calibration parameters with control logic. Arbitrarily modifying control panel software or reinstalling translation programs into internal systems introduces severe risks of bricking the entire control panel or losing calibration values. Furthermore, in environments contaminated with oil and dust, holding a smartphone to run camera translation applications compromises hands-free maintenance operations and distracts worker attention, increasing safety accident risks.
-
-Addressing these challenges, this framework introduces **'POLYLINK-HUD (Polyglot Link HUD) Non-invasive Spatial HMI Gateway'**. Without modifying internal code or circuitry by even 1 Bit (Zero-Modification), it captures external display pixel streams and audio feeds via cameras and microphones, projecting real-time target language (customized to the worker's native language) subtitles and manual guidelines onto AR glass HUD lenses as spatial overlays.
-
-The brand name `moa` embodies the human warmth of embracing and gathering fragmented error logs into one system.
-
-This serves as a practical implementation of `soma-moa` Charter 0 (Axiom 0) and the Human-in-the-Loop philosophy: "Robots and AI are Subordinate, System Governance is Main, but even Governance must remain Auxiliary to primary human tasks." It maintains original equipment safety while aiming to improve first-line response capabilities of field technicians.
-
-Identical language barriers extend beyond industrial sites into daily life (menus, signboards, textbooks, imported appliance manuals). This framework aims to mitigate entry barriers when playing console or PC games where dialogues and UIs are provided only in English, experiencing difficulties enjoying foreign-language subtitles on legacy media such as VHS, LD, DVD, and archival films without modifying the original media, nature documentaries, biological ecosystems, specialized engineering commentary media, or attending live theater, plays, operas, and dubbed media screenings.
-
-### 0.2 Wide-Area Survival Mesh Lineage & Privacy by Design
-POLYLINK-HUD inherits L0 anchoring, Tri-State Isolation, Co-Survival Bridge mechanisms, and H-INDICATOR metrics from master specifications `LAST-LIGHT` (Indoor/Underground L0 Anchor: Fire Extinguisher Cabinet) and `FIRST-LIGHT` (Outdoor Wide-Area L0 Anchor: Marine Buoy, Mountain Repeater). It expands industrial control panels into a new L0 anchor type, functioning as an L2 translation overlay module providing an uninterrupted translation link (Seamless Transition Link) from First Light (equipment signal) to Last Light (worker field of view).
-
-Sharing the identical philosophical foundation of the non-invasive and non-interference design principles adopted by the 'Co-Survival Bridge' in the `LAST-LIGHT` specification, this `POLYLINK-HUD` establishes lineage technical integration as a 'Polyglot Coexistence Bridge' that assists in bridging linguistic, cultural, and sensory barriers among multinational field workers, specialized voice actors, original performers, and audiences via non-damaging non-invasive overlays.
-
-This system prioritizes individual human rights and privacy protection. Adhering to Privacy by Design principles, it excludes functions that collect or analyze worker eye movement, facial expressions, or emotional states for evaluation purposes, maintaining strict compliance with applicable regulations (PIPA, EU AI Act, etc.).
-
-### 0.3 Base Model & AI Scalability Definitions (Base vs Extended Fusion)
-The optical vision OCR, speech STT, VLM/LLM contextual interpretation, and AR HUD spatial overlay projection mechanisms disclosed herein serve as the Master Reference Framework for spatial HMI gateways.
-
-The Base model of POLYLINK-HUD operates using standard built-in sensors (RGB camera and 6DoF IMU) on AR glasses and edge terminals, adhering to the ultra-lightweight non-invasive auxiliary structure. This engineering design choice directly addresses physical form-factor constraints specific to AR glasses: **weight fatigue imposed on the nose bridge and ears, facial contact thermal dissipation limits, and battery runtime degradation risks during continuous wear.** Simultaneously, for high-load processing and multi-sensing environments, Extended Fusion configurations that combine external non-contact sensors (IR/thermal cameras, non-contact EMF sensors, microphone arrays, smart rings, haptic modules, BLE/Wi-Fi/UWB communication modules, specialized edge NPUs) or large-scale AI agents preserve and fully encompass technical rights under this prior art framework.
-
-* **1ms-class Switching & Flexible Range Rule —** Visual overlay control, frame synchronization, and HUD layer disconnection (High-Z) timescales operate at a 1ms-class reference point (0.1ms to 10ms variable range) at the MIPI switch stage, encompassing complete display blackout within 1 frame (16.6ms) to cover hardware switching to display panel response domains.
-* **Target-Language Agnostic Rule —** In multinational site environments where equipment default displays or standards are fixed in English or foreign languages, spatial subtitle and guidance layers are translated and projected 1:1 into the target language configured by individual non-native workers.
-* **Non-Invasive Zero-Modification Principle —** Electrical or software modifications to internal PLCs, NC controllers, bus lines, and ROM firmware are excluded, operating strictly as an auxiliary system receiving external optical pixels and audio signals.
-* **Hands-Free Spatial Alignment —** Head pose tracking and control panel UI coordinate anchoring allow workers to view native target language translation overlays directly above foreign display areas without shifting eye focus during hands-free tool operation.
-* **Form-Factor Agnostic Rule —** Receiving and projecting devices are not limited to specific AR glasses, encompassing enterprise-issued units as well as personal consumer smart glasses purchased at the user's expense (BYOD, Bring Your Own Device) running software-level overlays.
-
-### 0.4 Zero-Downtime & Offline Independence
-During network disconnections or edge processing overloads, the system maintains offline independent operation via minimal OCR functionality and cached alarm code libraries, aiming to avoid operational delays or stoppages to equipment.
-
-### 0.5 Non-Exclusive Interoperability
-This architecture avoids lock-in to specific optical vision sensors or translation engines, functioning as an open public standard compatible with industrial vision standards, UVC specs, open-source VLM/LLM models, and common HMI protocols.
-
-### 0.6 Operational Priority
-During equipment emergencies or alarms, vision OCR and critical error code target language overlays take top execution priority, throttling high-resolution graphic rendering to maintain 1ms-class response continuity.
-
-### 0.7 Universal Scope, 3 Sub-categories & Enterprise Storage Routing
-This specification applies universally to legacy numerical control machine tools, foreign measuring instruments, imported automated control panels, precision terminal boxes, marine control panels, video conference translation, and consumer smart glass translation overlays. It defines three distinct operational sub-categories and enterprise auto-documentation routing structures:
-
-* **Enterprise Sub-category & Storage Routing —** Focuses on operational continuity via L0 0.1ms E-Stop, L1 Many as One, and L2 physical isolation hardware execution. Maintenance logs and action results extracted from the non-invasive pipeline automatically route to enterprise-designated remote infrastructure (NAS, S3, MES, ERP systems) to assist in maintenance record documentation.
-* **Everyday Sub-category —** Automatically suppresses speculative output when Vibe Search inference confidence falls below 90%. Covers menus, signs, books, manuals, video call captions, legacy media (archival films, VHS, LD, DVD), console/PC game UI/dialogue subtitles, nature documentaries, biological ecosystems, specialized engineering commentary media, native language spatial subtitles for foreign/multinational audiences attending movies or localized dubbed screenings, and live theater/play/opera subtitles. Restricted to temporary personal viewing; excludes recording, distribution, or derivative works.
-* **Personal Sub-category —** Implements PII 10-second flush, 1x/2x haptic notifications, minimal logging, and Quiet Assist for personal consumer smart glasses (BYOD). Automatically excludes and blurs third-party faces and voices without external transmission. Legal liability for public space recording rests with the device owner.
-
-### 0.8 Pure Conceptual White Paper & Zero Liability Notice
-This document is a conceptual white paper published as defensive prior art based on personal field experience to prevent private patent monopolization by third parties and suggest technological development directions. This document contains no product quality warranties or repair guarantees. All operational outcomes and legal liabilities arising from referencing, implementing, or applying these concepts belong to the user, and the author (`deundeuni` / `soma-moa`) assumes zero civil or criminal liability.
-
-### 0.9 Acknowledgement of Independent Prior Research
-This architecture was independently conceived by the author; however, the possibility of similar independent research by other parties is acknowledged. The objective of this publication is to prevent private monopolization and open the concepts as public prior art.
-
----
-
-## 1. Version History
-
-* **v1.0 (2026-09-11) —** Initial release of `soma-moa` L3 Social HMI extension module `CWP-AR-HUD` v1.0.
-* **v1.1 (2026-09-11) —** Renamed to `POLYLINK-HUD`, established `FIRST/LAST-LIGHT` lineage, clarified Extended Fusion, and defined dual licensing structure.
-* **v1.2 (2026-09-11) —** Removed brand names, established game/venue subtitle extensibility, and defined BYOD private space blurring protections.
-* **v1.3 (2026-09-11) —** Established Human-Centric Auxiliary AI Safety First, Error Lifecycle Blackbox Logging, RAG linkage, enterprise routing, and trade secret separation.
-* **v1.3.1 (2026-09-12) —** Defined non-invasive spatial overlays for legacy media (Archival Film, VHS, LD, DVD) and game UI/dialogue without modifying or damaging original physical media.
-* **v1.3.2 (2026-09-12) —** Streamlined the moa brand origin explanation in Section 0.1 for readability and isolated phonetic trademark intent details into Appendix E.
-* **v1.3.3 (2026-09-12) —** Softened Appendix A AI inventorship precedent citations to a defensive declaration tone and aligned Section 0.3 Extended Fusion sensor listings 1:1 with English references.
-* **v1.3.4 (2026-09-12) —** Explicitly defined physical AR glass constraints (weight fatigue, heat limits, battery runtime) in Section 0.3 as non-obvious engineering trade-off foundations for Base/Extended Fusion separation, synchronizing Section 2 L0 Extended Fusion items 1:1 across the document.
-* **v1.3.5 (2026-09-12) —** Established Section 3.K Performer-Centric Non-Interference Principle in main body text.
-* **v1.3.6 (2026-09-12) —** Fully cited the intrinsic creative value of voice-actor dubbing artistry, expanding Section 3.K to 'Artistic Dubbing Coexistence & Non-Interference Principle' to enable non-native audiences to simultaneously receive personalized native subtitles on AR HUDs during dubbed media screenings without audio interference.
-* **v1.3.7 (2026-09-12) —** Referenced the 'Co-Survival Bridge' concept from `LAST-LIGHT`, establishing the system as a 'Polyglot Coexistence Bridge' connecting multinational workers, specialized voice actors, original performers, and audiences.
-* **v1.3.8 (2026-09-12) —** **[LAST-LIGHT Metaphor Refinement & Non-Invasive/Non-Interference Design Philosophy Synchronization]** Softened over-extended disaster survival metaphors when referencing the `LAST-LIGHT` white paper, precisely tuning Sections 0.2 and 3.K toward technical lineage integration centered on shared non-invasive/non-interference auxiliary design philosophies.
-
----
-
-## 2. 3-Tier Applied Architecture
-
-* **[L2] Auxiliary HMI & User Interface Layer**
-  * AR Glass Spatial HUD — Projects target language (native language) subtitle overlays, 3D action guides, and wire break arrows directly over foreign control panels, specialized knowledge commentary media, artistic performances, and dubbed media displays.
-  * Co-Survival Bridge / Smart Ring / Haptic Module — Delivers localized haptic feedback (1x/2x) during critical error events.
-  * Monitoring & Enterprise Routing — Auto-routes maintenance history, pinout diagrams, and RAG resolution guides to enterprise NAS/S3/MES systems.
-* **[L1] Perception & Inference Fabric**
-  * Pixel Stream OCR/VLM Pipeline — Performs real-time segmentation and text/speech extraction from control panels and performance screens.
-  * RAG Solution Search & Edge LLM Engine — Analyzes error codes and specialized dialogue context to perform real-time target translation and query on-device/remote RAG knowledge bases.
-  * Spatial Anchoring & Tracking — Maintains world-locked subtitle positioning over physical panel and screen coordinates using 6DoF IMU deadband filtering.
-  * Extended Fusion Signal Module — Processes extended EMF and thermal camera signals to convert wire break coordinates.
-* **[L0] Equipment & Hardware Layer**
-  * Legacy Control Panels (CRT/LCD/LED displays), error indicator lights, foreign physical manuals, cable trays (Industrial L0 Anchor).
-  * [Base Model] AR glass built-in RGB camera, 6DoF IMU, microphone array, see-through display (ultra-lightweight wear, low heat, extended battery runtime).
-  * [Extended Fusion] Detachable IR/thermal cameras, non-contact EMF sensors, microphone arrays, smart rings, haptic modules, BLE/Wi-Fi/UWB communication modules, auxiliary emergency power, specialized edge NPU compute terminals.
-
----
-
-## 2.5 AI Governance & Safety-First (4 Protection Mechanisms)
-
-* **Abstract AI Engine & RAG Linkage Definition —** The AI processing layer encompasses on-device edge AI, lightweight VLMs, sLLMs, RAG knowledge retrievers, and server/cloud-linked models as an abstract cognitive/inference entity.
-* **Privacy by Design & Human-Centric Auxiliary AI Safety 4 Protection Mechanisms —**
-  * Systems are designed with human-centric AI assistance and safety as top priorities, excluding eye-tracking, face analysis, or emotional evaluation functions in compliance with PIPA, EU AI Act, and applicable privacy laws.
-  * **1. Anonymized Delta Logging, PII 10-Second Flush & Private Space Blurring —** All frame data and PII are flushed from RAM within 10 seconds, retaining only CBOR 24B anonymized logs. When personal AR glasses scan private spaces, non-consenting faces and voices are immediately excluded/blurred and never transmitted externally.
-  * **2. Quiet Assist —** Replaces intrusive audible alarms with 1x/2x localized haptic feedback, minimizing non-essential logging.
-  * **3. Technician Dignity & Auxiliary Status Locking —** Ensures AI functions strictly as an auxiliary helper rather than a worker surveillance tool, reserving final decision authority exclusively for humans (Human-in-the-Loop).
-  * **4. Just Culture & Overload Mitigation —** Avoids penalizing worker errors, actively establishing overload mitigation buffers.
-
----
-
-## 3. Core System Blocks & Mechanisms
-
-### A. Non-invasive Frame Capture & OCR/VLM Pipeline
-* Scans control panel displays without physical contact using external vision cameras to receive pixel frames.
-* Filters pixel moiré and reflection noise via asynchronous random sampling.
-
-### B. Edge LLM Contextual Translation & RAG Solution Search Linkage
-* Analyzes extracted foreign text to convert it into the user-configured target language in real time.
-* Connects with on-device or remote RAG knowledge bases immediately upon capturing error codes to retrieve root causes and manual action guidelines.
-
-### C. World-Locked Anchoring & Cybersickness Mitigation
-* Locks subtitles and RAG action guides onto physical 3D control panel coordinates using 6DoF IMU data (World-Locked).
-* Integrates with human Vestibulo-Ocular Reflex (VOR) mechanisms to mitigate visual-vestibular conflict during head movement, applying deadband filters to prevent text swimming.
-
-### D. Cognitive Read-Time Window 2-Stage Resource Control
-* **Stage 1 (Initial Capture, VLM Inference & RAG Search) —** Triggers NPU execution at 1ms-class low latency upon detecting new error text to generate target subtitles and RAG guidelines.
-* **Stage 2 (Spatial Anchoring & Read Window) —** Once subtitles lock onto panel coordinates and the worker scans the text during the Cognitive Read Window, high-overhead VLM/LLM inference throttles down (Pause/Dormant), maintaining coordinates via lightweight IMU tracking.
-* Aims to mitigate processor overheating, processing bottlenecks, and rendering jitter during continuous operation.
-
-### E. Non-contact EMF / Thermal Extended Fusion Wire Break Detection
-* Scans external magnetic field disconnections using extended non-contact EMF sensors or thermal cameras without stripping wires or making circuit contact.
-* Projects estimated wire break locations directly onto physical cable trays or terminal blocks using AR HUD spatial overlays (colored layers and directional arrows).
-
-### F. Hands-Free AR HUD Rendering & Haptic Assistance
-* Enables technicians to review native language guides, wire break locations, and terminal pinouts hands-free while holding tools.
-* Delivers 1x/2x localized haptic alerts during critical system warnings to alleviate visual fatigue.
-
-### G. Axiom 0 Non-invasive Governance
-* Operates as an external visual/auditory/haptic auxiliary layer without interfering with primary machine control systems, aiming to mitigate firmware bricking risks.
-
-### H. Downtime Loss Mitigation & Self-First-Action Guide
-* Guides field technicians through immediate first-line resolution of simple alarms and wire breaks, aiming to reduce line stoppages caused by waiting for external service engineers.
-
-### I. Error Lifecycle Blackbox Logging & Enterprise Routing
-* Automatically logs the complete process—from error detection and translation to RAG guide presentation, physical action completion, and error clearance—in a non-invasive blackbox format.
-* Anonymized structured logs stripped of PII automatically route to enterprise-designated remote infrastructure (NAS, S3, MES), assisting in the automated documentation of maintenance history and AI training data.
-
-### J. Human-in-the-Loop Auxiliary Governance & Trade Secret Separation
-* Human-in-the-Loop execution operates as an auxiliary governance procedure ensuring that physical control actions are never executed without explicit operator approval or manual override. Specific pipeline control source code, OCR/VLM model weights, and algorithm parameters are maintained as proprietary Trade Secrets pursuant to Korean Patent Act Article 103 and 35 U.S.C. §273.
-
-### K. Multidisciplinary Expertise & Polyglot Coexistence Bridge Principle
-* This system fully respects the creative artistic value of original actors' performances as well as professional voice actors' 'dubbing' (voice re-creation and commentary) which serves as a core knowledge-transfer pillar in nature documentaries, biological ecosystems, and specialized engineering media, acknowledging it as a high-level multidisciplinary knowledge integration domain.
-* Rather than replacing or modifying original voice commentary or dubbing audio feeds, this system operates as a 'Polyglot Coexistence Bridge' connecting distinct professional fields (engineering, ecology, arts) and non-native audiences/workers.
-* Even when viewing localized dubbed screenings or specialized commentary media, foreign audiences or target language users can receive and project personalized native subtitles as transparent spatial layers within their AR glass HUD's Cognitive Read Window while preserving the dubbed/commentary audio stream intact.
-* Under the identical philosophy of non-invasive and non-interference design principles adopted by the 'Co-Survival Bridge' in the `LAST-LIGHT` white paper, this framework aims for the harmonious coexistence and non-interference auxiliary implementation of 'specialized knowledge voice commentary' and 'multilingual spatial subtitles' operating together on a single screen without physical or acoustic modification.
-
----
-
-## 4. 4-Layer Survival Architecture Specs, Safety Philosophy & Dynamic Control
-
-### 4.1 4-Layer Survival Architecture Quantitative Specs
-* **L0 (Hardware/Switching) —** 0.1ms E-Stop cutoff, V-Home ±5mm 3D zero calibration, HMAC HW Bypass control.
-* **L1 (Network/Communication) —** Many as One dual-redundant mesh, Raft consensus threshold 70% / 100ms latency control, CBOR packet spec (L0 24B + L1 33B, total < 50B), SDK size 35.2KB (< 42KB limit), base RAM usage 3.2KB (< 10MB limit).
-* **L2 (Governance/Inference) —** Physical isolation between compute Brain and Governance, eFPGA validation < 0.02ms, PRELOCK 80% safety margin, E_STOP_LATCH < 0.1ms, RECOVERY requires Ed25519 signature.
-* **L3 (User/HMI) —** Quiet Assist 1x/2x haptic notifications, PII memory flush within 10 seconds.
-
-### 4.2 Safety Philosophy Inheritance & International Standards
-Heinrich 300:29:1 ratio serves solely as philosophical motivation; physical engineering implementations reference international safety standards:
-* Active implementation of Safety-II and Just Culture principles
-* ISO 13849-1 Category 4 Performance Level e (PL e) compliance
-* IEC 61508 SIL3 safety integrity level integration
-* GDPR Article 5(1)(e) data minimization and storage limitation principles
-
-### 4.3 Dynamic Resource Management & Defense Control
-* **Rate Limiter —** Normalizes camera input frame rates and OCR processing cycles to mitigate processor overload and frame flooding.
-* **T-Reg Suppressor —** Hardware-throttles execution cycles when terminal power or thermal metrics exceed threshold limits, aiming to prevent device crashes during extended wear.
-* **Tri-State Isolation —** Triggers a 1ms-class (0.1ms to 10ms variable range) High-Z state at the MIPI switch stage during compute errors or NPU overloads, completing display blackout within 1 frame (< 16.6ms) to mitigate blocking the technician's view of physical equipment.
-
----
-
-## 5. Standard Utilization & Legal Boundaries
-
-* **Standard Compliance —** References ISO/IEC 14496, Bluetooth SIG, USB UVC, and industrial vision standards.
-* **OEM Warranty Preservation —** Maintains non-invasive operation without altering physical or electrical states of target equipment, preserving original manufacturer warranties.
-
----
-
-## 6. Future Applications, Industry Expansion & Standard Subtitle App Extensibility
-
-Applies to legacy CNC AR maintenance, foreign meter retrofits, everyday consumer AR guides (signs, menus, manuals), legacy media (archival films, VHS, LD, DVD) and console/PC game UI/dialogue subtitles under zero-modification overlays, nature documentaries, biological ecosystems, specialized engineering commentary media, localized dubbed media multi-audience native subtitles, live theater/play/opera subtitles, and underground-industry-outdoor wide-area seamless transition links. Extensible to a Venue & Theater Standard Subtitle Application Platform where personal AR glasses receive and display real-time native subtitles based on venue spatial anchors and public subtitle feeds. First inventor prior art rights for all extension concepts—including error lifecycle blackbox logging and RAG linkage routing—belong solely to the author (`deundeuni` / `soma-moa`).
-
----
-
-## 7. Practical Protection, Brand Rights & Legal Framework
-
-* **Authoritative Original Notice —** Legal and technical interpretation relies primarily on the Korean original (`README.ko.md`). The English version serves solely as an auxiliary reference.
-* **Brand & Domain Defense —** Maintains exclusive rights to open-source code name `soma-moa`, brand name `Somamoa`, and canonical domain `somamoa.ai.kr`, mitigating unauthorized trademark appropriation or patent privatization by third parties.
-* **Dual Licensing Structure —** The white paper text is licensed under Creative Commons Attribution 4.0 (CC BY 4.0) for public open access. However, if a third party attempts to enforce patent rights derived from this concept against the author or ecosystem participants, DPL v1.0 (Defensive Patent License) terms trigger automatic retroactive revocation of their license.
-* **Broad Scope Encompassment —** Prior art protections broadly encompass non-invasive frame capture, OCR/VLM overlays, RAG solution search linkage, error lifecycle blackbox logging, enterprise storage auto-documentation routing, target language independence, native language conversion, Base model lightweight execution, Extended Fusion, Privacy by Design human rights protections, 3 sub-categories (Enterprise/Everyday/Personal BYOD), World-Locked anchoring, Cognitive Read Window resource control, non-contact wire break detection, 1ms-class MIPI switching, FIRST-LIGHT/LAST-LIGHT wide-area transition and non-invasive/non-interference design philosophy integration, soma-moa L3 Social integration, Tri-State Isolation, legacy media (VHS, LD, DVD, archival films) zero-modification overlays, game UI subtitles, venue/theater standard subtitle applications, multidisciplinary expertise respect and polyglot coexistence bridge principles, and BYOD personal AR glasses.
-* **Commercialization Separation —** White paper originals contain pure open-source and prior art disclosures; commercialization roadmaps are managed in separate documentation.
-* **Prior Use Rights & Trade Secrets —** Preserves prior use rights under Korean Patent Act Article 103 and 35 U.S.C. §273. Specific OCR model weights and AI parameters are protected as Trade Secrets.
-* **Legal Counsel Recommendation —** Professional patent attorney review is recommended for formal defensive strategies.
-
----
-
-## 8. Sources, Zenodo DOIs & Document Completeness
-
-* **Master Governance Architecture:** GitHub - `soma-moa / soma-moa`
-* **Master Survival Architecture:** GitHub - `deundeuni / chiplet-apu-multi-system-survival-architecture`
-* **Architecture Strategy:** GitHub - `soma-moa / ARCHITECTURE_STRATEGY.md`
-* **Indoor/Underground L0 Anchor Master:** GitHub - `soma-moa / LAST-LIGHT`
-* **Outdoor Wide-Area L0 Anchor Master:** GitHub - `soma-moa / FIRST-LIGHT`
-* **Master Uncertainty Evaluation Layer:** GitHub - `soma-moa / FIRST-LIGHT / H-INDICATOR`
-* **CERN Zenodo Official Registries (6 DOIs):**
-  * Zenodo DOI 10.5281/zenodo.22373538
-  * Zenodo DOI 10.5281/zenodo.22373722
-  * Zenodo DOI 10.5281/zenodo.22373704
-  * Zenodo DOI 10.5281/zenodo.22373189
-  * Zenodo DOI 10.5281/zenodo.22373686
-  * Zenodo DOI 10.5281/zenodo.22374987
-* **Canonical Gateway:** `somamoa.ai.kr`
-* **Legal Precedents:** Korean Patent Act Article 103, US Patent Code 35 U.S.C. §273.
-* **Version-Agnostic Citation Statement —** Version numbers of referenced repositories and documents are subject to ongoing updates. Prior art protections and core technical concepts disclosed herein are not restricted to specific version numbers, applying independently across all past, present, and future revisions of cited sources.
-* **Document Completeness:** This specification possesses complete independent technical authority as a standalone document.
-
----
-
-## Appendix A: Inventorship, Background & Legal Precedents
-* **System Architect & Sole Inventor —** deundeuni (soma-moa) — Conceived independently from field experience as a factory sample worker and daily semiconductor construction site laborer. Sole intellectual authority for overall system architecture, non-invasive overlay circuits, and technical decisions.
-* **Defensive Declaration on Inventorship —** In alignment with the principles of international precedents and guidelines denying independent AI inventorship (e.g., US Supreme Court / Federal Circuit Thaler v. Vidal, USPTO Feb 2024 AI Inventorship Guidance, and EPO Guidelines G-II 3.3.1), we declare that all technical concepts and engineering decisions in this specification belong exclusively to the single human author (deundeuni). AI tools functioned strictly as auxiliary text editing tools.
-* **Source Rights Attribution —** All intellectual property rights, vision overlay algorithms, and infrastructure anchoring mechanisms belong exclusively to the author (`deundeuni`) and official repositories (`soma-moa` / `deundeuni`).
-
----
-
-## Appendix B: Version History
-▶ Refer to Section 1 (Version History) in main text.
-
----
-
-## Appendix C: AI Assistance Disclosure & Tool Operational Rules
-* **Original Architecture & Concepts —** deundeuni (Human) — Sole Inventor, responsible for overall architecture, field motivation, and technical design decisions.
-* **Auxiliary Text Editing Tools —** AI tools were utilized strictly under the human author's direction for grammar editing, text refinement, and document formatting (Auxiliary Text Editing Tools), taking no part in conceiving core inventive concepts.
-
----
-
-## Appendix D: Legal Disclaimer & Responsibility Limitation
-* **White Paper Nature & Auxiliary Notice —** Disclosed technologies (POLYLINK-HUD v1.3.8) constitute a pure conceptual white paper published to prevent private patent monopolization. It provides no operational guarantees for commercial production and functions strictly as an auxiliary reference.
-* **Author Zero-Liability Declaration —** The author (`deundeuni` / `soma-moa`) assumes zero civil or criminal liability for equipment failures, maintenance errors, line stoppages, property damage, or legal disputes resulting from implementing or referencing this document. All operational responsibilities belong to the implementing entity.
-* **Trademark Disclaimer —** Technical terms and standards referenced herein serve as field examples and imply no infringement of third-party trademarks.
-
----
-
-## Appendix E: Brand Naming & Phonetic Structure
-* **Brand Origin & Coining Rationale of soma-moa —** The brand name `moa` embodies the human warmth of "embracing and gathering fragmented error logs into one system," transcending simple data collection. The vowel symmetry in `S O M A` - `m o a` and the lowercase hyphenated form `soma-moa` symbolize open-source community identity and a unique branding signature, maintained as evidence of coining rationale and origin intent rather than exclusive legal enforcement.
+> Multilingual Public Notice: This document is an auxiliary English translation of the official Korean technical specification. v1.4.8 2026-09-24 (Korean version: README.ko.md)
+> Original Authority Notice: The supreme legal and engineering standard of this technical specification resides in the Korean original (README.ko.md), and this English version functions solely as an auxiliary reference. (README.ko.md is authoritative original)
+> 
+POLYLINK-HUD (formerly CWP-AR-HUD) — Non-invasive Optical Vision OCR/LLM Overlay & Multisensory AR Glass HUD Spatial HMI Gateway Technical Specification for Multilingual & Legacy Industrial Equipment
+Subtitle: Defensive Prior Art Whitepaper on Human-Centric Auxiliary AI Safety First, Zero-Modification Principle for Firmware & PLC Control Panels, Error Lifecycle Blackbox Self-Logging & RAG Solution Search Integration, Enterprise Routing Automated Documentation, Privacy by Design 4-Layer Human Rights Protection, Lossless Overlay for Classic Video Media, Subtitle Scalability for Global Animation Studio Franchises, Major Fantasy/SF Film Franchises, Specialized Voice Actor Dubbing Market & Live Stage Arts (Musicals/Plays/Operas), Suppression of AI Replacement based on Authenticity of Imperfection, Temporal Accumulation, Layers of Iterative Re-interpretation, and History of Inter-Artistic Lineage, Multiracial/Multinational Target Language (Native) Customized Overlay, 1ms MIPI Switching & Cognitive Buffer Overload Control, FIRST-LIGHT/LAST-LIGHT Wide-Area Mesh L0 Anchor & Non-invasive/Non-interfering Lineage Integration, 3 Sub-categories, Creator Zero-Liability Declaration, and soma-moa L3 Social Auxiliary Governance Integration (Ver. 1.4.8)
+ * Official Document Classification: Defensive Publication / Prior Art Whitepaper
+ * Initial Conception Date: 2026-08-28 / Final Revision Date (v1.4.8): 2026-09-24
+ * Original Intellectual Property (IP) Holder: soma-moa (Conceiver: deundeuni)
+ * Official Repositories: github.com/soma-moa | github.com/deundeuni | Official Domain: somamoa.ai.kr
+ * Applicable Licenses: Creative Commons Attribution 4.0 (CC BY 4.0) & DPL v1.0 (Defensive Patent License)
+ * Search Keywords: POLYLINK-HUD, AR Glass HUD, Non-invasive HMI, Vision OCR, On-device VLM, Error Blackbox Self-Logging, RAG Solution Search, Enterprise Routing, Native Language Translation, Extended Fusion, Privacy by Design, PIPA, EU AI Act Compliance, World-Locked Anchoring, Cybersickness Mitigation, Cognitive Read Window, 1ms Visual Response, MIPI High-Z, Downtime Loss Mitigation, BYOD Smart Glass, Global Animation Studio Franchises, Major Fantasy/SF Film Franchises, Specialized Voice Actor Dubbing Market, Live Stage Arts, Authenticity of Imperfection, Temporal Accumulation, Layers of Iterative Re-interpretation, History of Inter-Artistic Lineage, Multi-Subtitle Distribution, FIRST-LIGHT, LAST-LIGHT, Non-invasive Non-interfering Philosophy Integration, Seamless Transition, Auxiliary Governance, Axiom 0, Creator Liability Exclusion, soma-moa L3 Social, Respect for Multidisciplinary Expertise & Co-Survival Bridge Principle, deundeuni, Prior Art
+0. Creator Declaration & Motivation
+0.1 On-Site Motivation, Human-Centric Auxiliary AI Safety First & Auxiliary Governance
+This structural design originates from practical pain points on the shop floor and everyday inconveniences: "In manufacturing sites operating foreign and legacy precision machining/control equipment for over 10 to 20 years, inability to decipher control panel displays and manuals in the original foreign language leads to downtime losses lasting days even for single-line simple errors."
+The primary premise of this specification is "Human-Centric Auxiliary Safety First and regulatory-compliant safe operation of AI systems assisting human workers' primary tasks." In high-value, precision Numerical Control (NC) and Programmable Logic Controller (PLC) equipment, precision calibration parameters and control logic are tightly coupled. Modifying control panel software or reinstalling translation programs internally risks causing complete panel unresponsiveness or calibration data loss. Furthermore, holding a smartphone with a camera translation app on grease- and dust-heavy job sites compromises hands-free operation, disperses worker attention, and induces severe safety accident risks.
+To address this, adhering to the Zero-Modification principle without modifying equipment internal code or circuits, we conceived the 'POLYLINK-HUD Non-invasive Spatial HMI Gateway' which perceives external display pixel streams and audio voices via camera and microphone to project real-time spatial overlay subtitles and manual instructions in the worker's target language (customized native language) directly onto AR glass HUD lenses.
+Language barriers extend beyond industrial sites into daily life and global media consumption environments. We aim to mitigate immersion barriers caused by language differences across global animation studio franchises, major fantasy/SF film franchises, specialized voice actor dubbing markets, and live stage arts such as musicals, plays, and operas. Without altering or damaging the artistic value of original video or dubbing audio, it provides target language subtitles as a visual overlay exclusively to individual viewers, assisting multilingual cultural enjoyment.
+0.2 Wide-Area Survival Mesh Lineage & Privacy by Design
+POLYLINK-HUD adopts the L0 anchoring, Tri-State Isolation, Co-Survival Bridge, and H-INDICATOR mechanisms of the upper master architectures LAST-LIGHT and FIRST-LIGHT, extending industrial control panels and global media environments into a new anchor type as a dedicated module.
+Sharing the non-invasive and non-interfering design philosophy adopted by the 'Co-Survival Bridge' of the LAST-LIGHT whitepaper, POLYLINK-HUD establishes lineage technical interoperability as a 'Polyglot Coexistence Bridge' assisting multinational workers, specialized voice actors, original performers, and audience members across language and cultural barriers via non-destructive, non-invasive overlays.
+Designed with human rights and privacy protection as top priorities, it complies with Privacy by Design principles. It excludes features that collect or analyze biometric data to evaluate individuals, ensuring strict adherence to relevant regulations such as PIPA and the EU AI Act.
+0.3 Base Implementation & Extended Fusion Definition
+The optical vision OCR, speech STT, VLM/LLM context interpretation, and AR HUD spatial overlay projection mechanisms disclosed herein function as the reference framework for the upper HMI gateway framework.
+POLYLINK-HUD establishes an ultra-lightweight non-invasive auxiliary structure operating solely on standard built-in sensors as its base version. This engineering choice overcomes AR glass form factor constraints — nasal/auricular physical weight fatigue, facial contact thermal dissipation limits, and battery life reduction risks — minimizing computational resource occupancy. Simultaneously, for environments requiring high-load computation and multi-sensing, it fully encompasses technical rights for extended fusion combinations integrating external detachable sensor modules (thermal cameras, EMF sensors, specialized NPUs, etc.).
+ * 1ms Time-Scale & Flexible Range Rule — Visual overlay control and HUD layer disconnection (High-Z) timescales during anomalies are anchored to the 1ms scale (0.1ms–10ms variable) at the MIPI switch, encompassing non-display response within 1 display frame (within 16.6ms).
+ * Target-Language Agnostic Rule — Converts and projects 1:1 spatial subtitles and guidance layers in real time according to the worker's target language (native or designated language).
+ * Non-Invasive Zero-Modification Principle — Excludes electrical or software modifications to internal controllers, receiving only optical pixels and audio streams from external displays and speakers.
+ * Hands-Free Spatial Alignment — Combines wearer head pose tracking and coordinate anchoring to project target language translation layers precisely over original display regions without gaze shifting.
+ * Form-Factor Agnostic Rule — Unrestricted to specific AR glasses; encompasses BYOD (Bring Your Own Device) scenarios where software installs on consumer smart glasses.
+0.4 Zero-Downtime & Independence
+Maintains offline independent operation via minimal OCR functions and cached error code/local subtitle libraries during network disconnections.
+0.5 Non-Exclusive Interoperability & Open Public Standard
+Operates as an open public standard unconstrained by proprietary vision sensors or translation engines.
+0.6 Operational Priority
+Prioritizes OCR and key error code target language overlay computations during emergencies, suppressing secondary graphic rendering to guarantee 1ms-scale response continuity.
+0.7 Universal Scope, 3 Sub-categories & Enterprise Storage Routing
+Encompasses all environments requiring non-invasive overlays, establishing 3 sub-categories and automated documentation routing.
+ * Enterprise Sub-category & Automated Storage Routing — Applies L0 non-invasive switching, L1 Many as One, and L2 physical isolation. Employs the Raft consensus mechanism to ensure distributed consistency across multi-node wireless environments where multiple workers wear individual AR glasses to share and synchronize maintenance logs and error records in real time. Maintenance history automatically routes to enterprise-designated infrastructure (NAS, S3, MES).
+ * Daily Sub-category — Autonomously suppresses speculative outputs when Vibe Search inference confidence falls below 90%. Encompasses menus, manuals, multi-party video conference speech subtitles, classic video media (VHS, LD, DVD), global animation studio franchise series, major fantasy/SF film franchises, console/PC game original dialogue subtitles, nature documentaries, engineering media, specialized voice actor dubbing works, and live stage arts (musicals, plays, operas) native language subtitles. Restricted to temporary viewing assistance.
+ * Personal Sub-category — Applies PII 10-second memory destruction, Quiet Assist, and BYOD consumer smart glass scenarios. Blurs third-party faces and voices, suppressing external transmission.
+0.8 Whitepaper Nature & Zero Liability Notice
+This document is an idea whitepaper published as defensive prior art to prevent third-party private patent monopolization. It contains no quality guarantees for commercial production. All legal liabilities arising from implementation belong solely to the implementing entity; civil and criminal liability of the creator (deundeuni / soma-moa) is strictly zero.
+0.9 Acknowledgement of Independent Prior Research
+Acknowledges that similar ideas may have been researched independently by other researchers, aiming to open technological concepts as public prior art.
+1. Version History
+ * v1.0 ~ v1.3.9 (2026-09-11 ~ 2026-09-17) — AR HUD release, FIRST/LAST-LIGHT integration, error blackbox self-logging, and spatial docent applications established.
+ * v1.4.0 (2026-09-23) — Explicitly expanded application scope to media entertainment and specialized voice actor dubbing markets.
+ * v1.4.1 (2026-09-23) — Applied generalized replacement of genre/market categories to mitigate trademark risks.
+ * v1.4.2 (2026-09-23) — Integrated philosophies of 'Authenticity of Imperfection' and 'Temporal Accumulation' as defensive prior art logic.
+ * v1.4.3 ~ v1.4.7 (2026-09-23 ~ 2026-09-24) — Corrected Appendix D, integrated 'Layers of Iterative Re-interpretation' and 'History of Inter-Artistic Lineage', fixed defensive tone, claim scope, and quantitative range rules.
+ * v1.4.8 (2026-09-24) — Identified and removed hardware control specs (V-Home, HMAC, PL e, SIL3) that drifted in from other sub-whitepapers in the ecosystem (machine tool safety control series) to ensure alignment with the Zero-Modification principle. Retained Raft consensus with reinforced justification for multi-user log synchronization. Refined Section 4.2 title to 'Safety & Governance Philosophy Adoption' to match contents.
+2. 3-Tier Applied Architecture
+ * [L2] Auxiliary Guidance & User/Technician HMI Layer
+   * AR Glass Spatial HUD — Projects control panel original UI, target language subtitle overlays over major franchise films/animations and live stages, 3D action guides, and visual wire-break arrows.
+   * Co-Survival Bridge / Smart Ring / Haptic Module — Delivers localized haptic alerts.
+   * Control & Enterprise Routing — Automatically transfers maintenance history to designated NAS/S3/MES.
+ * [L1] Vision OCR/VLM, RAG Search & Edge Translation Inference Fabric Layer
+   * Pixel Stream OCR/VLM Pipeline — Real-time segmentation and extraction of text/audio regions.
+   * RAG Solution Search & Edge LLM Engine — Analyzes context for real-time target language conversion and on-device/remote RAG knowledge base search integration.
+   * Spatial Anchoring & Coordinate Tracking — World-Locked Tracking and deadband filtering.
+   * Extended Fusion Signal Processing Module — Coordinate transformation for wire-break estimation sections via extended EMF and thermal imaging signal analysis.
+ * [L0] Target Equipment, Vision Sensor & HUD Display Layer
+   * Legacy Control Panels, error indicator lights, foreign physical manuals, and media screening screens/stage spaces.
+   * [Base] AR glass built-in RGB camera, 6DoF IMU, microphone array, optical see-through display.
+   * [Extended Fusion] Detachable infrared/thermal camera, non-contact EMF sensor, specialized edge NPU compute terminal, etc.
+2.5 AI Governance & Safety-First
+ * Broad AI Engine & RAG Integration Definition — Defined as an abstracted perception/inference entity encompassing on-device edge AI, lightweight VLMs, sLLMs, RAG knowledge base search engines, and large AI models.
+ * Privacy by Design & 4 Human-Centric AI Auxiliary Safety Mechanisms —
+   * Excludes biometric evaluation to ensure compliance with relevant regulations.
+   * 1. Anonymized Delta Logging, PII 10s Destruction & Private Space Blur — Frame data and PII identification data are flushed from RAM within 10 seconds, retaining only CBOR 24B anonymous formats. Scanning third-party private spaces via personal AR glasses excludes/blurs third-party faces/voices from OCR targets without external transmission.
+   * 2. Quiet Assist — Uses localized 1-pulse/2-pulse haptic vibrations, minimizing minor logging.
+   * 3. Technician Dignity & Auxiliary Role Lock — Final decision authority rests with humans (Human-in-the-Loop).
+   * 4. Just Culture & Safety Overload Mitigation — Avoids penalizing worker mistakes while actively mitigating system overloads.
+3. Key System Blocks & Operational Mechanisms
+A. Non-invasive Frame Capture & OCR/VLM Visual Perception Pipeline
+ * Non-contact scans display surfaces to receive pixel frames, passing through isolation and refinement steps for glare/reflection noise.
+B. Edge LLM Context Translation & RAG Solution Search Integration
+ * Analyzes text/audio for real-time target language translation. Upon error detection, integrates with RAG search engines to retrieve root causes and action guides.
+C. World-Locked Anchoring & Cybersickness Mitigation
+ * Utilizes 6DoF IMU data to project subtitles statically anchored (World-Locked) in 3D spatial coordinates, linking with VOR mechanisms to mitigate sensory conflict.
+D. Cognitive Read-Time Window Dynamic 2-Stage Resource Control
+ * Stage 1 — Activates NPUs at ultra-low latency upon capturing new text to generate target language subtitles.
+ * Stage 2 — Suppresses high-load re-inference during the Cognitive Read Window while users read anchored text, mitigating thermal output and rendering jitter.
+E. Non-Contact EMF & Thermal Imaging Extended Fusion Wire-Break Support
+ * Detects magnetic field interruptions or thermal changes without direct electrical connections, projecting estimated wire-break coordinates directly via AR HUD spatial overlays.
+F. Hands-Free AR HUD Rendering & Haptic Notification
+ * Enables technicians to review target language guides via line-of-sight while securing two-handed workability, delivering localized haptic alerts during warnings.
+G. Axiom 0 Non-Invasive Auxiliary Governance
+ * Operates strictly as an external visual/auditory/haptic auxiliary layer without encroaching on primary equipment control.
+H. Downtime Loss Mitigation & Self-First-Action Guidance
+ * Guides on-site workers to complete 1st-line actions, striving to reduce line stoppage wait times.
+I. Error Lifecycle Blackbox Logging & Enterprise Routing
+ * Self-logs the entire error lifecycle in a non-invasive blackbox format, automatically routing structured logs to enterprise-designated infrastructure (NAS, S3, MES).
+J. Human-in-the-Loop Auxiliary Governance & Trade Secret Management
+ * Designed so that control actions are never executed autonomously without explicit human approval. Detailed pipelines are managed as non-public Trade Secrets.
+K. Respect for Multidisciplinary Expertise & Polyglot Coexistence Bridge Principle
+ * Fully recognizes 'dubbing' led by professional voice actors, performance in major franchise media, and live stage arts (musicals, plays, operas) as high-level artistic and narrative convergence domains. In response to uncritical AI voice replacement pressures introduced under the pretext of overcoming language barriers, it structurally aims to preserve original performances without damage based on four philosophical pillars:
+   * Authenticity of Imperfection — AI voice models constantly attempt to output optimized, flawless results. However, what fandoms value is the 'authenticity of imperfection' — subtle breath changes, momentary tone shifts, and emotional variables reflected by human performers. These human elements serve as unique narrative signals, making them difficult to substitute fully with AI's standardized outputs.
+   * Temporal Accumulation and Co-Growth — Relationships between performers and audiences form over long timelines. The deepening vocal resonance of aging actors overlaps with audiences' life timelines, creating historical value in aging together. AI models updated merely via version updates face structural limitations in accumulating such human lifecycles and historical resonance.
+   * Layers of Iterative Re-interpretation — In live stage arts and long-running roles, human performers repeatedly execute identical scripts over decades, continuously re-interpreting lines based on age and personal experiences. This 'history of lifecycle re-interpretation for identical roles' represents a unique layer of human art that AI models struggle to accumulate or embody fully.
+   * History of Inter-Artistic Lineage & Mutual Influence — Uncompromising artistic visions held by master creators become imprinted on scores and scripts. Performing artists inherit this artistic framework, re-interpreting it in their own styles. This 'history of mutual influence and artistic identity divergence' is an existential heritage of relational networks difficult to form through generative AI's short prompts or style transfers.
+ * Accordingly, this system controls and suppresses generative AI voice overdubbing or physical audio distortion.
+ * In dubbing theaters, live stage performances, and major franchise screening environments, non-native audiences receive original media, stage audio, and dubbing audio accumulated with time, authenticity, re-interpretation layers, and artistic lineage without unnecessary modification or damage, while receiving transparent native language subtitles as spatial overlays in the AR glass HUD lower Cognitive Read Window.
+ * This realizes true coexistence and 'co-survival', where technological progress does not usurp human creators' positions, but visually bypasses and assists physical language barriers to connect multinational audiences with creators.
+4. 4-Layer Survival Specs, Safety Philosophy & Dynamic Control
+4.1 Quantitative Specs
+ * L0 (Optical/Display/Switching Layer) — MIPI High-Z 1ms-scale (0.1ms–10ms variable) visual display cutoff, 6DoF spatial World-Locked anchor coordinate tracking, non-invasive optical frame capture bandwidth control.
+ * L1 (Network/Communication Layer) — Many as One redundant mesh, Raft consensus threshold 70%+ / 100ms latency control for multi-user AR glass maintenance log synchronization, CBOR packet spec (L0 24B + L1 33B, under 50B total compute), SDK footprint 35.2KB or less (< 42KB limit), base RAM occupancy 3.2KB or less (< 10MB limit).
+ * L2 (Governance/Inference Layer) — Physical separation of compute brain and isolated governance, eFPGA-based HMI pipeline validity check < 0.02ms, PRELOCK 80%+ overlay safety margin, Ed25519 cryptographic signature linkage for blackbox self-logging recovery (RECOVERY).
+ * L3 (User/HMI Layer) — Quiet Assist 1-pulse/2-pulse localized haptic notifications, PII memory destruction within 10 seconds.
+4.2 Safety & Governance Philosophy Adoption
+ * Active implementation of Safety-II and Just Culture principles.
+ * Compliance with Privacy by Design and GDPR Article 5(1)(e) data minimization and storage limitation principles.
+ * EU AI Act compliance and non-invasive human rights & safety-first auxiliary governance linkage.
+4.3 Dynamic Control
+ * Dynamic Frame Rate Limiter — Regulates camera input frames and OCR compute cycles to prevent processor overload and frame surges.
+ * T-Reg Suppressor — Hardware-limits compute cycles when edge device power or thermal output exceeds thresholds, mitigating overload during extended wearing.
+ * Tri-State Physical & Logical Isolation — Switches the MIPI HUD display layer to High-Impedance (High-Z) state within 1ms (0.1ms–10ms variable) during internal errors or NPU overloads, rendering the display transparent within 1 frame (within 16.6ms) to prevent obstructing the technician's view of physical control panels.
+5. Standard Utilization & Legal Boundaries
+ * Standard Compliance — Uses ISO/IEC 14496, Bluetooth SIG, USB UVC specs, and industrial vision standards as illustrative examples.
+ * Manufacturer Warranty Non-Infringement — Maintains non-invasiveness without altering physical or electrical states of host equipment, avoiding adverse impacts on original manufacturer warranty terms.
+6. Future Application, Industrial Scope & Standard App Scalability
+Encompasses non-destructive (Zero-Modification) overlays for legacy machine tool AR maintenance, foreign measuring instrument retrofits, daily consumer AR assistance (signboards, menus), classic video media (VHS, LD, DVD), global animation studio franchise series, major fantasy/SF film franchises, specialized voice actor dubbing markets, and live stage arts (musicals, plays, operas). Includes nature documentaries, opera dialogue subtitles, and seamless transition links across underground, industrial, and outdoor environments.
+Future application candidates include non-invasive spatial docents for museums/galleries, hands-free sequential visual guides for traditional crafts, and archaic narrative commentary for traditional performance arts. It can expand into standard subtitle and docent app platforms for theaters and museums based on public spatial anchors and standard subtitle feeds. All original concepts and prior art rights for these expanded ideas and routing technologies belong to the creator (deundeuni / soma-moa).
+7. Practical Protection & Legal Framework
+ * Korean Original Authority Principle — Legal and technical interpretations of this specification strictly prioritize the Korean original (README.ko.md), with other translation versions serving solely as references.
+ * Open Source, Brand & Domain Defense — Retains rights to the open-source code name soma-moa, brand name Somamoa, and official domain somamoa.ai.kr, preemptively mitigating unauthorized third-party trademark squatting or patent privatization.
+ * Dual Licensing Structure — The whitepaper document itself is published under Creative Commons Attribution 4.0 (CC BY 4.0) for public open access. However, if a third party asserts exclusive patent rights against the creator or ecosystem contributors based on this technology, their license automatically terminates retroactively under DPL v1.0 (Defensive Patent License) terms.
+ * Comprehensive Scope — All overarching concepts — non-invasive frame capture, OCR/VLM overlays, automated enterprise infrastructure documentation routing, Privacy by Design 4-layer protections, 3 sub-categories, lossless overlays for classic media, multilingual subtitles for animation and film franchises, specialized dubbing and live stage applications, AI replacement suppression philosophies (Authenticity of Imperfection, Temporal Accumulation, Layers of Iterative Re-interpretation, History of Inter-Artistic Lineage), and theater standard subtitle platforms — are broadly applied to secure prior art coverage.
+ * Separation of Commercial Execution — This whitepaper includes pure open-source and prior art disclosures; proprietary commercialization execution plans are managed separately in technical business documents.
+ * Prior User Rights & Trade Secret Separation — Maintains prior user rights pursuant to Korean Patent Act Article 103 and 35 U.S.C. §273, managing detailed OCR weights and AI parameters as Trade Secrets.
+ * Legal Counsel Recommendation — Recommends formal review and consultation with patent attorneys regarding this defensive publication strategy.
+8. Sources & Zenodo DOIs
+ * Supreme Governance Architecture: GitHub - soma-moa / soma-moa
+ * Supreme Survival Architecture: GitHub - deundeuni / chiplet-apu-multi-system-survival-architecture
+ * Supreme Architectural Strategy: GitHub - soma-moa / ARCHITECTURE_STRATEGY.md
+ * Indoor/Underground L0 Fire Box Anchor Master: GitHub - soma-moa / LAST-LIGHT
+ * Outdoor Wide-Area L0 Buoy/Repeater Anchor Master: GitHub - soma-moa / FIRST-LIGHT
+ * Supreme Confidence Assessment Layer: GitHub - soma-moa / FIRST-LIGHT / H-INDICATOR
+ * CERN Zenodo Official Registries (6 DOIs):
+   * Zenodo DOI 10.5281/zenodo.22373538
+   * Zenodo DOI 10.5281/zenodo.22373722
+   * Zenodo DOI 10.5281/zenodo.22373704
+   * Zenodo DOI 10.5281/zenodo.22373189
+   * Zenodo DOI 10.5281/zenodo.22373686
+   * Zenodo DOI 10.5281/zenodo.22374987
+ * Canonical Gateway: somamoa.ai.kr
+ * Legal Precedents & Guidelines: Korean Patent Act Article 103, US Patent Act 35 U.S.C. §273, US Federal Circuit Thaler v. Vidal precedent, USPTO 2024.02 AI Inventorship Guidance (89 FR 10043), European Patent Office Examination Guidelines EPO Guidelines G-II 3.3.1.
+ * Source Version Inclusivity & Completeness Declaration — Version numbers of cited governance, survival architecture, strategy documents, anchors, and H-INDICATOR modules are variable elements updated alongside technological progress. The technical ideas, combination mechanisms, and defensive prior art effects of this whitepaper are not bound to specific version numbers and apply independently across all past, present, and future revised versions of cited repositories and documents.
+ * Document Completeness: This document possesses independent technical completeness as a standalone unit specification.
+Appendix A: Inventorship, Background & Legal Precedents
+ * System Architect & Sole Inventor — deundeuni (soma-moa) — Independent conceiver based on factory sample work and construction site daily labor experiences. Sole intellectual entity behind this technical architecture, non-invasive overlay circuit combination design, and engineering decisions.
+ * Defensive Inventorship Declaration — In accordance with international precedents and guidelines negating AI inventorship (US Federal Circuit Thaler v. Vidal, USPTO 2024.02 AI Inventorship Guidance 89 FR 10043, EPO Guidelines G-II 3.3.1, etc.), this document declares that all technical ideas and engineering decisions belong to the single human creator (deundeuni). AI tools served strictly as auxiliary text refining tools.
+ * Original Rights Attribution — Intellectual property rights and prior user rights grounds for all technical ideas, vision overlay algorithms, and infrastructure anchoring mechanisms disclosed herein reside with the individual creator (deundeuni) and official repositories (soma-moa / deundeuni).
+Appendix B: Version History
+▶ Refer to Section 1 (Version History) in the main body.
+Appendix C: AI Assistance Disclosure & Tool Operational Rules
+ * Original Architecture & Concepts — deundeuni (Human) — Sole Inventor, overall concept, field motivation, combination design, and final technical decisions.
+ * Auxiliary Text Editing Tools — AI tools were utilized strictly under explicit human direction as auxiliary text editing tools for context review, draft sentence refining, and formatting, without involvement in technical idea generation or inventive processes.
+Appendix D: Legal Disclaimer & Responsibility Limitation
+ * Idea Whitepaper Nature & Auxiliary Scope — The technology disclosed herein (POLYLINK-HUD v1.4.8) and related overlay systems are an idea whitepaper published to prevent private patent monopolization, not a guarantee of commercial product operation. This system does not replace formal control interfaces and operates purely as an auxiliary reference.
+ * Creator Zero Liability — The author (deundeuni / soma-moa) assumes zero civil or criminal legal liability for equipment failures, maintenance errors, outages, personal/property damages, or legal disputes resulting from referencing, citing, implementing, or applying this text. All operational responsibility belongs to the operating entity on site.
+ * IP & Trademark Disclaimer — Mentioned technical standards or genre/market category names are public classifications used to aid contextual understanding, with no intention of infringing upon specific corporate trademark rights.
+Appendix E: Brand Naming & Phonetic Structure
+ * Etymology & Conceiving Intent of soma-moa — The brand name moa originates from the Korean word meaning "to gather/embrace scattered error logs and distributed terminals together." The vowel rhyming symmetry of S O M A (ㅗㅏ) - m o a (ㅗㅏ) and the hyphenated lowercase soma-moa symbolize open-source community identity and unique branding signatures, maintained as evidence for trademark coining etymology rather than exclusive legal dominance.
