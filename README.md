@@ -43,12 +43,8 @@ This document is an idea whitepaper published as defensive prior art to prevent 
 0.9 Acknowledgement of Independent Prior Research
 Acknowledges that similar ideas may have been researched independently by other researchers, aiming to open technological concepts as public prior art.
 1. Version History
- * v1.0 ~ v1.3.9 (2026-09-11 ~ 2026-09-17) — AR HUD release, FIRST/LAST-LIGHT integration, error blackbox self-logging, and spatial docent applications established.
- * v1.4.0 (2026-09-23) — Explicitly expanded application scope to media entertainment and specialized voice actor dubbing markets.
- * v1.4.1 (2026-09-23) — Applied generalized replacement of genre/market categories to mitigate trademark risks.
- * v1.4.2 (2026-09-23) — Integrated philosophies of 'Authenticity of Imperfection' and 'Temporal Accumulation' as defensive prior art logic.
- * v1.4.3 ~ v1.4.7 (2026-09-23 ~ 2026-09-24) — Corrected Appendix D, integrated 'Layers of Iterative Re-interpretation' and 'History of Inter-Artistic Lineage', fixed defensive tone, claim scope, and quantitative range rules.
- * v1.4.8 (2026-09-24) — Identified and removed hardware control specs (V-Home, HMAC, PL e, SIL3) that drifted in from other sub-whitepapers in the ecosystem (machine tool safety control series) to ensure alignment with the Zero-Modification principle. Retained Raft consensus with reinforced justification for multi-user log synchronization. Refined Section 4.2 title to 'Safety & Governance Philosophy Adoption' to match contents.
+ * Current Version: Ver. 1.4.8 (2026-09-24)
+ * Full Version History Details: Refer to Version History.md for the complete bilingual version history and detailed revision logs.
 2. 3-Tier Applied Architecture
  * [L2] Auxiliary Guidance & User/Technician HMI Layer
    * AR Glass Spatial HUD — Projects control panel original UI, target language subtitle overlays over major franchise films/animations and live stages, 3D action guides, and visual wire-break arrows.
@@ -153,7 +149,7 @@ Appendix A: Inventorship, Background & Legal Precedents
  * Defensive Inventorship Declaration — In accordance with international precedents and guidelines negating AI inventorship (US Federal Circuit Thaler v. Vidal, USPTO 2024.02 AI Inventorship Guidance 89 FR 10043, EPO Guidelines G-II 3.3.1, etc.), this document declares that all technical ideas and engineering decisions belong to the single human creator (deundeuni). AI tools served strictly as auxiliary text refining tools.
  * Original Rights Attribution — Intellectual property rights and prior user rights grounds for all technical ideas, vision overlay algorithms, and infrastructure anchoring mechanisms disclosed herein reside with the individual creator (deundeuni) and official repositories (soma-moa / deundeuni).
 Appendix B: Version History
-▶ Refer to Section 1 (Version History) in the main body.
+▶ Refer to Section 1 (Version History) in the main body and Version History.md for the complete bilingual revision logs.
 Appendix C: AI Assistance Disclosure & Tool Operational Rules
  * Original Architecture & Concepts — deundeuni (Human) — Sole Inventor, overall concept, field motivation, combination design, and final technical decisions.
  * Auxiliary Text Editing Tools — AI tools were utilized strictly under explicit human direction as auxiliary text editing tools for context review, draft sentence refining, and formatting, without involvement in technical idea generation or inventive processes.
